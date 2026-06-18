@@ -117,61 +117,7 @@ footer{
 <body>
 
 <header>
-    <h1>Cozy Creations</h1>
-    <p>Handmade Resin Art Crafted With Love</p>
-</header>
-<h2>Featured Products</h2>
-
-<!-- FILTER BUTTONS -->
-<button onclick="filterProducts('all')">All</button>
-<button onclick="filterProducts('clock')">Resin Clock</button>
-<button onclick="filterProducts('mirror')">Resin Mirror</button>
-
-<br><br>
-
-<!-- PRODUCTS -->
-
-<div class="product clock">
-  <img src="clock1.jpg" width="150">
-  <p>Resin Clock</p>
-  <p>৳600</p>
-</div>
-
-<div class="product clock">
-  <img src="clock2.jpg" width="150">
-  <p>Resin Clock</p>
-  <p>৳650</p>
-</div>
-
-<div class="product mirror">
-  <img src="mirror1.jpg" width="150">
-  <p>Resin Mirror</p>
-  <p>৳800</p>
-</div>
-
-<div class="product mirror">
-  <img src="mirror2.jpg" width="150">
-  <p>Resin Mirror</p>
-  <p>৳850</p>
-</div>
-
-<script>
-function filterProducts(category) {
-  let items = document.getElementsByClassName("product");
-
-  for (let i = 0; i < items.length; i++) {
-    if (category === "all") {
-      items[i].style.display = "inline-block";
-    } else {
-      if (items[i].classList.contains(category)) {
-        items[i].style.display = "inline-block";
-      } else {
-        items[i].style.display = "none";
-      }
-    }
-  }
-}
-</script>
+   
 
 <section class="section">
     <h2>Featured Products</h2>
